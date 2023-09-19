@@ -1,0 +1,392 @@
+// Variables
+$bg-color-dark: #070439;
+$bg-color-desaturated: #585989;
+$bg-color-grey: #f8f8fe;
+$accent-color-1: #3065f8;
+$accent-color-2: #3c9f8f;
+$text-color-black: #000000;
+$text-color-white: #f6f6fe;
+$shadow-color: #bfbfbf;
+$font-raleway: 'Raleway', sans-serif;
+$font-weight-400: 400;
+$font-weight-700: 700;
+$transition: 0.5s ease;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 4% 10px 4%;
+  background-color: #ffffffd1;
+  backdrop-filter: blur(1rem);
+  z-index: 10;
+  transition: all $transition;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  font-family: $font-raleway;
+  font-weight: $font-weight-400;
+  margin: 0 30px;
+  color: $text-color-black;
+  transition: all $transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color-1;
+  }
+}
+
+/* Section General Styles */
+.section {
+  padding: 180px 4% 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-content,
+  &-img {
+    flex: 1;
+  }
+
+  &-img {
+    max-width: 650px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-content {
+    max-width: 540px;
+  }
+
+  &-title {
+    font-family: $font-raleway;
+    font-weight: $font-weight-700;
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+  }
+
+  &-description {
+    margin: 20px auto;
+  }
+}
+
+/* Form Styles */
+form {
+  width: 90%;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+
+  * {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 4px;
+    outline: $shadow-color;
+    transition: all $transition;
+  }
+
+  input {
+    flex: 2;
+    max-width: 280px;
+    border-color: $shadow-color;
+
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+
+  button {
+    flex: 1;
+    border-color: transparent;
+    color: $text-color-white;
+    background-color: $accent-color-1;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-within {
+      opacity: 0.7;
+      outline: $bg-color-dark;
+      box-shadow: 2px 2px 6px 0 $bg-color-dark;
+    }
+  }
+
+  // Error Message Styles
+  .error-message {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: auto;
+    bottom: -22px;
+    left: 0;
+    font-family: $font-raleway;
+    font-size: 0.7rem;
+    color: #ff9b9b;
+    padding: 0.5rem 0;
+    border: none;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 6rem;
+}
+
+/* Team Section */
+.team-section {
+  position: relative;
+  background-color: $bg-color-grey;
+  border-top-right-radius: 6%;
+  padding-top: 120px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 30%;
+    top: -4rem;
+    right: 0;
+    background-color: $bg-color-grey;
+    border-radius: 30% 50% 0 0;
+    z-index: -1;
+  }
+}
+
+.bg-curve {
+  position: absolute;
+  top: -4.5%;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.team-content {
+  max-width: 65%;
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.see-how {
+  padding: 0.2rem 0;
+  border: 1px solid transparent;
+  border-bottom-color: $accent-color-2;
+  outline: $accent-color-2;
+  font-family: $font-raleway;
+  font-size: 1.01rem;
+  color: $accent-color-2;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #52cfba;
+    border-bottom-color: #52cfba;
+    outline: #52cfba;
+  }
+}
+
+.see-how img {
+  vertical-align: middle;
+}
+
+.card-container {
+  max-width: 60%;
+  padding: 1rem 1.5rem;
+  margin-top: 2.5rem;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 18px 0 $shadow-color;
+  font-family: $font-raleway;
+  transition: box-shadow $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 8px 0 $shadow-color;
+  }
+}
+
+.card-container * {
+  margin-top: 0.5rem;
+}
+
+.quote {
+  width: 1rem;
+}
+
+.card-description {
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 0.8rem;
+  font-weight: $font-weight-700;
+}
+
+.author-title {
+  font-size: 0.7rem;
+  font-weight: $font-weight-400;
+}
+
+/* Sign-in Section */
+.signIn-section {
+  padding-top: 80px;
+  color: $text-color-white;
+  background-color: $bg-color-desaturated;
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .section-description {
+    opacity: 0.9;
+  }
+
+  .section-img {
+    max-width: 480px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: flex-start;
+
+    input {
+      flex: 1;
+      width: 100%;
+      max-width: 100%;
+
+      &:focus {
+        transform: scale(1);
+      }
+    }
+
+    button {
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+        background-color: #30a1f8;
+      }
+    }
+
+    // Error Message Styles
+    .error-message {
+      bottom: 30px;
+      color: $text-color-white;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  padding-top: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $bg-color-dark;
+
+  .logo {
+    max-width: 140px;
+    filter: brightness(0%) invert(1);
+    margin-bottom: 1.7rem;
+  }
+
+  .informations {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  address,
+  .footer-menu,
+  .socials {
+    display: flex;
+    flex-direction: column;
+    color: $bg-color-grey;
+    gap: 1rem;
+  }
+
+  .socials {
+    flex-direction: row;
+  }
+
+  a {
+    color: $text-color-white;
+    font-family: $font-raleway;
+    transition: all $transition;
+
+    &:hover,
+    &:focus {
+      color: $accent-color-1;
+    }
+  }
+
+  .address-icon {
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+    border: 1px solid $text-color-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color-1;
+    }
+  }
+
+  .attribution {
+    align-self: center;
+    font-size: 11px;
+    text-align: center;
+    color: $text-color-white;
+    margin-top: 40px;
+
+    a {
+      font-family: $font-raleway;
+      color: #52cfba;
+    }
+  }
+}
