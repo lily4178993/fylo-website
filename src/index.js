@@ -1,30 +1,43 @@
 import './main.scss';
-import logoImg from './images/logo.svg';
-import heroImg from './images/illustration-1.svg';
-import teamImg from './images/illustration-2.svg';
-import bgCurveImg from './images/bg-curve-desktop.svg';
-import testimonialImg from './images/avatar-testimonial.jpg';
-import seeHowArrow from './images/icon-arrow.svg';
-import quoteSymbol from './images/icon-quotes.svg';
-import phoneIcon from './images/icon-phone.svg';
-import mailIcon from './images/icon-email.svg';
 import mailValidation from './emailChecker';
 import sr from './scrollReveal';
+import createAndAppendImage from './createAndAppendImage';
+import { arrowIcon, bgCurveImage, emailIcon, heroImage, logoImage, phoneIcon, quoteIcon, teamImage, testimonialImage } from './images';
 
-const appLogo = document.querySelectorAll('.logo');
-for (let i = 0; i < appLogo.length; i++) {
-  appLogo[i].src = logoImg;
-}
-document.getElementById('heroImg').src = heroImg;
-document.getElementById('teamImg').src = teamImg;
-document.getElementById('bgCurve').src = bgCurveImg;
-document.getElementById('testimonialImg').src = testimonialImg;
-document.getElementById('seeHowArrow').src = seeHowArrow;
-document.getElementById('quoteSymbol').src = quoteSymbol;
-document.getElementById('phoneIcon').src = phoneIcon;
-document.getElementById('mailIcon').src = mailIcon;
+// x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x //
+// Create and append images to specific elements
+createAndAppendImage(logoImage, "Fylo's logo", '#headerLogo', 'logo');
+createAndAppendImage(logoImage, "Fylo's logo", '#FooterLogo', 'logo');
+createAndAppendImage(
+  heroImage,
+  'Illustration of two persons filling a folder',
+  '#heroImg',
+  null
+);
+createAndAppendImage(bgCurveImage, 'grey curve', '#bgCurve', 'bg-curve');
+createAndAppendImage(quoteIcon, 'Quote', '#quote', 'quoteSymbol');
+createAndAppendImage(
+  arrowIcon,
+  'See how it works',
+  '#seeHowArrow',
+  null
+);
+createAndAppendImage(
+  testimonialImage,
+  'avatar',
+  '#testimonialImg',
+  'author-avatar'
+);
+createAndAppendImage(
+  teamImage,
+  'Illustration of three persons having a coversation',
+  '#teamImg',
+  null
+);
+createAndAppendImage(emailIcon, 'Email', '#emailIcon', 'address-icon');
+createAndAppendImage(phoneIcon, 'Phone', '#phoneIcon', 'address-icon');
 
-
+// x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x //
 // Apply ScrollReveal animations to specific elements with delays.
 sr.reveal('.section-content', { delay: 300 });
 sr.reveal('.section-img', { delay: 400 });

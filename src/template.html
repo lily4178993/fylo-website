@@ -6,7 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <!-- Google fonts -->
     <link
       rel="preconnect"
@@ -22,18 +27,20 @@
       rel="stylesheet"
     />
     <!-- Box Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <title>Fylo</title>
   </head>
 
   <body>
     <!-- header -->
     <header class="header">
-      <a href="#features"
-        ><img
-          alt="Fylo's logo"
-          class="logo"
-      /></a>
+      <a
+        href="#features"
+        id="headerLogo"
+      ></a>
       <!-- menu -->
       <nav>
         <ul class="navlist">
@@ -59,16 +66,28 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="./index.html" method="post"  id="form1">
-            <input type="email" name="email" id="email1" placeholder="Enter your email..." autocomplete="off" />
-            <button type="submit" title="Get Started">Get Started</button>
+          <form
+            action="./index.html"
+            method="post"
+            id="form1"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email1"
+              placeholder="Enter your email..."
+              autocomplete="off"
+            />
+            <button
+              type="submit"
+              title="Get Started"
+            >
+              Get Started
+            </button>
           </form>
         </div>
         <div class="section-img">
-          <img
-            alt="Illustration of two persons filling a folder"
-            id="heroImg"
-          />
+          <span id="heroImg"></span>
         </div>
       </section>
       <!-- team section -->
@@ -76,11 +95,7 @@
         id="team"
         class="section team-section"
       >
-        <img
-          alt="grey curve"
-          id="bgCurve"
-          class="bg-curve"
-        />
+        <span id="bgCurve"></span>
         <div class="section-content team-content">
           <h2 class="section-title">Stay productive, wherever you are</h2>
           <p class="section-description">
@@ -97,28 +112,17 @@
             class="see-how"
           >
             See how Fylo works
-            <img
-              alt="See how it works"
-              id="seeHowArrow"
-            />
+            <span id="seeHowArrow"></span>
           </button>
           <div class="card-container">
-            <img
-              alt="quote"
-              id="quoteSymbol"
-              class="quote"
-            />
+            <span id="quote"></span>
             <p class="card-description">
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
             </p>
             <div class="card-author">
-              <img
-                alt="avatar"
-                class="author-avatar"
-                id="testimonialImg"
-              />
+              <span id="testimonialImg"></span>
               <div class="author-name">
                 Kyle Burton <br /><span class="author-title"
                   >Founder & CEO, Huddle</span
@@ -127,12 +131,10 @@
             </div>
           </div>
         </div>
-        <div class="section-img">
-          <img
-            alt="Illustration of three persons having a coversation"
-            id="teamImg"
-          />
-        </div>
+        <div
+          class="section-img"
+          id="teamImg"
+        ></div>
       </section>
       <!-- sign in section -->
       <section
@@ -148,7 +150,11 @@
           </p>
         </div>
         <div class="section-img">
-          <form action="./index.html#sign-in" method="post" id="form2">
+          <form
+            action="./index.html#sign-in"
+            method="post"
+            id="form2"
+          >
             <input
               type="email"
               name="email"
@@ -156,33 +162,32 @@
               id="email2"
               autocomplete="off"
             />
-            <button type="submit" title="Get Started">Get Started For Free</button>
+            <button
+              type="submit"
+              title="Get Started"
+            >
+              Get Started For Free
+            </button>
           </form>
         </div>
       </section>
     </main>
     <footer class="section footer">
-      <a href="#features"
-        ><img
-          alt="Fylo's logo"
-          class="logo"
-      /></a>
+      <a
+        href="#features"
+        id="FooterLogo"
+      ></a>
       <div class="informations">
         <address>
-          <a href="tel:+1-543-123-4567"
-            ><img
-              alt="phone"
-              id="phoneIcon"
-              class="address-icon"
-            />Phone: +1-543-123-4567</a
+          <a
+            href="tel:+1-543-123-4567"
+            id="phoneIcon"
+            >Phone: +1-543-123-4567</a
           >
-          <a href="mailto:example@fylo.com"
-            ><img
-              src="/images/icon-email.svg"
-              alt="phone"
-              id="mailIcon"
-              class="address-icon"
-            />example@fylo.com</a
+          <a
+            href="mailto:example@fylo.com"
+            id="emailIcon"
+            >example@fylo.com</a
           >
         </address>
         <ul class="footer-menu">
@@ -198,19 +203,40 @@
         </ul>
         <ul class="socials">
           <li>
-            <a href="#" class="social-icon"><i class='bx bxl-facebook'></i></a>
+            <a
+              href="#"
+              class="social-icon"
+              ><i class="bx bxl-facebook"></i
+            ></a>
           </li>
           <li>
-            <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
+            <a
+              href="#"
+              class="social-icon"
+              ><i class="bx bxl-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="#" class="social-icon"><i class='bx bxl-instagram'></i></a>
+            <a
+              href="#"
+              class="social-icon"
+              ><i class="bx bxl-instagram"></i
+            ></a>
           </li>
         </ul>
       </div>
       <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/lily4178993/" target="_blank">Nelly</a>.
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/lily4178993/"
+          target="_blank"
+          >Nelly</a
+        >.
       </p>
     </footer>
   </body>

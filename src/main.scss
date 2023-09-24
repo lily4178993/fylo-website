@@ -12,6 +12,7 @@ $font-weight-400: 400;
 $font-weight-700: 700;
 $transition: 0.5s ease;
 
+// Global Styles
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ $transition: 0.5s ease;
   color: #b8b8b8;
 }
 
-/* Header */
+/* Header Styles */
 .header {
   position: fixed;
   width: 100%;
@@ -42,6 +43,7 @@ $transition: 0.5s ease;
   z-index: 10;
   transition: all $transition;
 
+  /* Navigation Styles */
   .navlist {
     display: flex;
 
@@ -60,18 +62,20 @@ $transition: 0.5s ease;
   }
 }
 
-/* Section General Styles */
+/* Section Styles */
 .section {
   padding: 150px 4% 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  /* Section Content and Image Styles */
   &-content,
   &-img {
     flex: 1;
   }
 
+  /* Image Styles */
   &-img {
     max-width: 650px;
 
@@ -82,10 +86,12 @@ $transition: 0.5s ease;
     }
   }
 
+  /* Content Styles */
   &-content {
     max-width: 540px;
   }
 
+  /* Title Styles */
   &-title {
     font-family: $font-raleway;
     font-weight: $font-weight-700;
@@ -93,6 +99,7 @@ $transition: 0.5s ease;
     line-height: 2.7rem;
   }
 
+  /* Description Styles */
   &-description {
     margin: 20px auto;
   }
@@ -105,6 +112,7 @@ form {
   gap: 1rem;
   position: relative;
 
+  /* Form Element Styles */
   * {
     padding: 0.5rem 1rem;
     border: 1px solid;
@@ -113,6 +121,7 @@ form {
     transition: all $transition;
   }
 
+  /* Input Styles */
   input {
     flex: 2;
     max-width: 280px;
@@ -123,6 +132,7 @@ form {
     }
   }
 
+  /* Button Styles */
   button {
     flex: 1;
     border-color: transparent;
@@ -138,7 +148,7 @@ form {
     }
   }
 
-  // Error Message Styles
+  /* Error Message Styles */
   .error-message {
     position: absolute;
     content: '';
@@ -154,16 +164,17 @@ form {
   }
 }
 
-/* Hero Section */
+/* Hero Section Styles */
 .hero-section {
   margin-bottom: 6rem;
 }
 
-/* Team Section */
+/* Team Section Styles */
 .team-section {
   position: relative;
   background-color: $bg-color-grey;
 
+  /* Background Curve Styles */
   .bg-curve {
     position: absolute;
     top: -5em;
@@ -172,11 +183,13 @@ form {
     z-index: -1;
   }
 
+  /* Section Title Styles */
   .section-title {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
 
+  /* See How Link Styles */
   .see-how {
     padding: 0.2rem 0;
     border: 1px solid transparent;
@@ -199,6 +212,7 @@ form {
     }
   }
 
+  /* Card Container Styles */
   .card-container {
     max-width: 60%;
     padding: 1rem 1.8rem;
@@ -214,34 +228,42 @@ form {
       box-shadow: 0 0 8px 0 $shadow-color;
     }
 
+    /* Card Content Styles */
     * {
       margin-top: 0.5rem;
     }
+
+    /* Quote Styles */
     .quote {
       width: 1rem;
     }
 
+    /* Card Description Styles */
     .card-description {
       line-height: 1.2rem;
       font-size: 0.8rem;
     }
 
+    /* Card Author Styles */
     .card-author {
       display: flex;
       align-items: center;
       gap: 1rem;
 
+      /* Author Avatar Styles */
       .author-avatar {
         width: 35px;
         height: 35px;
         border-radius: 50%;
       }
 
+      /* Author Name Styles */
       .author-name {
         font-size: 0.8rem;
         font-weight: $font-weight-700;
       }
 
+      /* Author Title Styles */
       .author-title {
         font-size: 0.7rem;
         font-weight: $font-weight-400;
@@ -250,20 +272,23 @@ form {
   }
 }
 
-/* Sign-in Section */
+/* Sign-in Section Styles */
 .signIn-section {
   padding-top: 80px;
   color: $text-color-white;
   background-color: $bg-color-desaturated;
 
+  /* Section Title Styles */
   .section-title {
     font-size: 1.7rem;
   }
 
+  /* Section Description Styles */
   .section-description {
     opacity: 0.9;
   }
 
+  /* Section Image Styles */
   .section-img {
     max-width: 480px;
 
@@ -271,6 +296,7 @@ form {
       flex-direction: column;
       align-items: flex-start;
 
+      /* Input Styles */
       input {
         flex: 1;
         width: 100%;
@@ -281,7 +307,9 @@ form {
         }
       }
 
+      /* Button Styles */
       button {
+
         &:hover,
         &:focus {
           opacity: 1;
@@ -289,7 +317,7 @@ form {
         }
       }
 
-      // Error Message Styles
+      /* Error Message Styles */
       .error-message {
         bottom: 30px;
         color: $text-color-white;
@@ -298,7 +326,7 @@ form {
   }
 }
 
-// Footer
+/* Footer Styles */
 .footer {
   position: relative;
   padding-top: 80px;
@@ -306,18 +334,21 @@ form {
   align-items: flex-start;
   background-color: $bg-color-dark;
 
+  /* Logo Styles */
   .logo {
     max-width: 140px;
     filter: brightness(0%) invert(1);
     margin-bottom: 1.7rem;
   }
 
+  /* Informations Styles */
   .informations {
     width: 80%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
 
+    /* Address, Footer Menu, and Socials Styles */
     address,
     .footer-menu,
     .socials {
@@ -326,6 +357,7 @@ form {
       color: $bg-color-grey;
       gap: 1rem;
 
+      /* Link Styles */
       a {
         color: $text-color-white;
         font-family: $font-raleway;
@@ -338,9 +370,27 @@ form {
       }
     }
 
+    /* Address Styles */
+    address {
+      align-items: flex-start;
+
+      a {
+        display: flex;
+        flex-direction: row-reverse;
+
+        /* Address Icon Styles */
+        .address-icon {
+          margin-right: 1rem;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    /* Socials Styles */
     .socials {
       flex-direction: row;
 
+      /* Social Icon Styles */
       .social-icon {
         font-size: 1.5rem;
         border: 1px solid $text-color-white;
@@ -356,15 +406,9 @@ form {
         }
       }
     }
-
-    address {
-      .address-icon {
-        margin-right: 1rem;
-        vertical-align: middle;
-      }
-    }
   }
 
+  /* Attribution Styles */
   .attribution {
     position: absolute;
     bottom: 20px;
@@ -381,7 +425,7 @@ form {
   }
 }
 
-/* Media queries */
+/* Media Query for Large Screens (min-width: 1440px) */
 @media screen and (min-width: 1440px) {
   .header {
     padding: 30px 10% 10px 10%;
@@ -444,15 +488,18 @@ form {
   }
 }
 
+/* Media Query for Medium Screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .header {
     img {
       width: 97px;
     }
   }
+
   .section {
     padding: 90px 4% 60px;
     flex-direction: column-reverse;
+
     &-content {
       max-width: 90%;
       text-align: center;
@@ -462,6 +509,7 @@ form {
       font-size: 1.8rem;
       line-height: 2rem;
     }
+
     &-img {
       max-width: 480px;
       margin-bottom: 4em;
@@ -481,6 +529,7 @@ form {
     .section-title {
       font-size: 1.4rem;
     }
+
     .section-description {
       text-align: left;
     }
@@ -520,12 +569,14 @@ form {
   }
 }
 
+/* Media Query for Small Screens (max-width: 627px) */
 @media screen and (max-width: 627px) {
   .team-section {
     .bg-curve {
       top: -1em;
     }
   }
+
   .footer {
     .informations {
       justify-content: center;
@@ -533,6 +584,7 @@ form {
   }
 }
 
+/* Media Query for Extra Small Screens (max-width: 498px) */
 @media screen and (max-width: 498px) {
   .header {
     .navlist {
@@ -541,14 +593,18 @@ form {
       }
     }
   }
+
   .section {
-  &-content {
+    &-content {
       max-width: 100%;
-    }}
+    }
+  }
+
   .hero-section {
     .section-title {
       font-size: 1.6rem;
     }
+
     form {
       width: 100%;
       flex-direction: column;
@@ -558,14 +614,17 @@ form {
       max-width: 100%;
     }
   }
+
   .team-section {
     .section-title {
       font-size: 1.25rem;
     }
+
     .card-container {
       max-width: 90%;
     }
   }
+
   .footer {
     .informations {
       flex-direction: column;
@@ -578,6 +637,7 @@ form {
   }
 }
 
+/* Media Query for Smallest Screens (max-width: 375px) */
 @media screen and (max-width: 375px) {
   .header {
     .navlist {
@@ -589,14 +649,18 @@ form {
   }
 }
 
+/* Media Query for Smallest Screens (max-width: 375px) */
 @media screen and (max-width: 280px) {
   .header {
     .logo {
-    max-width: 80px;
-  }
-  .navlist {
-  a {font-size: 0.8rem;}
-  }
+      max-width: 80px;
+    }
+
+    .navlist {
+      a {
+        font-size: 0.8rem;
+      }
+    }
   }
 
   .hero-section {
