@@ -11,6 +11,7 @@ This repository contains a web development solution for the Fylo landing page ch
 - [Future Development](#future-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
+- [License](#license)
 
 ## Overview <a name="overview"></a>
 
@@ -71,5 +72,11 @@ I express my gratitude to the following resources that were particularly helpful
 
 - [Frontend Mentor](https://www.frontendmentor.io) - For providing the Fylo landing page challenge that inspired this project.
 - [Icon8](https://www.icon8.com) - For providing the favicon used on the site.
+
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
+
+## License <a name="license"></a>
+
+This project is licensed under the [MIT License](./LICENSE).
 
 <p align="right">(<a href="#readme-top">Back to Top</a>)</p>
