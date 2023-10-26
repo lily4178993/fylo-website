@@ -1,0 +1,9 @@
+export { default as logoImage } from './logo.svg';
+export { default as heroImage } from './illustration-1.svg';
+export { default as teamImage } from './illustration-2.svg';
+export { default as bgCurveImage } from './bg-curve-desktop.svg';
+export { default as testimonialImage } from './avatar-testimonial.jpg';
+export { default as arrowIcon } from './icon-arrow.svg';
+export { default as quoteIcon } from './icon-quotes.svg';
+export { default as phoneIcon } from './icon-phone.svg';
+export { default as emailIcon } from './icon-email.svg';

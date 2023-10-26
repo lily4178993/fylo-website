@@ -1,0 +1,42 @@
+{
+  "name": "fylo-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "private": true,
+  "scripts": {
+    "test": "\"echo \"Error: no test specified\" && exit 1\"",
+    "start": "webpack serve --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lily4178993/fylo-website"
+  },
+  "keywords": [
+    "Fylo",
+    "FrontendMentor",
+    "Challenge"
+  ],
+  "author": {
+    "name": "Nelly Telli",
+    "email": "nellytelli@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.67.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
+  }
+}
