@@ -4,6 +4,7 @@ const common = require('./webpack.common');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -25,7 +26,10 @@ module.exports = merge(common, {
       new CssMinimizerPlugin(),
     ],
   },
-  plugins: [new MiniCssExtractPlugin({ filename: '[name][hash].css' })],
+  plugins: [
+    new MiniCssExtractPlugin({ filename: '[name][hash].css' }),
+    new FaviconsWebpackPlugin('./src/images/favicon.png'),
+  ],
   module: {
     rules: [
       {
