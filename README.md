@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 # Fylo Landing Page - Web Development Project
 
 This repository contains a web development solution for the Fylo landing page challenge on Frontend Mentor. Frontend Mentor challenges offer valuable opportunities to enhance coding skills by working on real-world projects.
